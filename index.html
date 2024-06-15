@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style>
+      
+        body{
+            border:5px solid #987070;
+            padding:50px;
+            font-size:3.5vh;
+            font-family: Verdana;
+            box-shadow: 20px 20px 10px rgb(219, 181, 181);
+            position: absolute;
+            left:22%;
+            width:50%;
+            margin-bottom:2%;
+            background-color:#F1E5D1;
+            color: #9b8080;       
+        }
+        h1{
+            text-align: center;
+        }
+
+        #name,#email,#profession,#age,#password,#comment,#submit{
+            width:90%;
+            padding:20px;
+            font-size: 3.5vh;
+            border-color: #987070;
+            transition:border-color 0.3s;
+            color:#684747;
+            margin-top:10px ;
+        }
+
+        #submit{
+            width: 95%;
+            border-style:hidden;
+            border-radius: 25px;
+            background-color:#DBB5B5;
+            color: #9b8080;
+            font-weight: 600;
+        }
+
+        input[type="radio"],input[type="checkbox"]{
+            zoom:1.5;            
+        }
+        
+        input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,textarea:focus,select:focus{
+            outline:none;
+            border:solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form </h1>
+    <!-- Form with Html & CSS-->
+    <form id="formControl">
+        <!-- Name -->
+        <div id="formName">
+            <label for="name">Name </label><br>
+            <input type="text" placeholder="Enter your name " id="name" required>
+        </div><br><br>
+        <!-- Age -->
+        <div id="formAge">
+            <label for="age">Age </label><br>
+            <input type="text" placeholder="Enter your age " id="age" required>
+        </div><br><br>
+        <!-- Email -->
+        <div id="formEmail">
+            <label for="email ">Email </label><br>
+            <input type="email" placeholder="Enter your email " id="email" rquired>
+        </div><br><br>
+        <!--Password -->
+        <div id="formPassword">
+            <label for="password">Password </label><br>
+            <input type="password" placeholder="Enter your password " id="password" required>
+        </div><br><br>  
+        <!-- Profession selection using drop down list -->
+        <div id="formProfession">
+            <label for="profession">Profession </label><br>
+            <select name="profession" id="profession">
+                <option value="entrepreneur">Entrepreneur</option>
+                <option value="engineer">Engineer</option>
+                <option value="farmer">Farmer</option>
+                <option value="lawyer">Lawyer</option>
+                <option value="doctor">Doctor</option>
+                <option value="police">Police</option>
+                <option value="artist">Artist</option>
+                <option value="politician">Politician</option>
+                <option value="teacher">Teacher</option>
+                <option value="others">Others</option>
+            </select><br>
+        </div><br>
+        <!-- Gender selection using radio button -->
+        <div id="formGender">
+            <label for="gender">Gender </label><br>
+                <input type="radio" name="gender" value="male">Male  
+                <input type="radio" name="gender" value="female">Female 
+                <input type="radio" name="gender" value="others">Others 
+        </div><br><br>
+        <!-- Hobbies selection using checkbox -->
+        <div id="formHobby">
+            <label for="hobby">Hobby </label><br>
+            <input type="checkbox" value="painting">Painting <br>
+            <input type="checkbox" value="cooking">Cooking <br> 
+            <input type="checkbox" value="gardening">Gardening <br>
+            <input type="checkbox" value="reading">Reading <br> 
+            <input type="checkbox" value="playing">Playing <br>
+        </div><br><br>
+        <!-- Comments using Textarea-->
+        <div id="formComments">
+            <label for="comments">Any Comments or Suggestions </label><br>
+            <textarea  id="comment"> </textarea>
+        </div><br>
+        <!-- Submit  -->
+         <button id="submit" value="submit">Submit</button>
+    </form>   
+</body>
+</html>
